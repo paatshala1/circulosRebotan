@@ -1,0 +1,238 @@
+:root {
+    --veces: infinite;
+}
+
+.cont {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 0.5em;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+    background-color: #bbb;
+}
+
+.cont__circulos {
+    min-width: 10em;
+    min-height: 10em;
+    margin: 0.5em;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    /* flex-shrink: 0; */
+    flex-grow: 0;
+}
+
+.circulo1 {
+    animation-name: "rebote1";
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: var(--veces);
+    animation-fill-mode:forwards;
+}
+
+.circulo2 {
+    animation-name: "rebote2";
+    animation-duration: 3.1s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    animation-iteration-count: var(--veces);
+    animation-fill-mode:both;
+}
+
+.circulo3 {
+    animation-name: "rebote3";
+    animation-duration: 3.2s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: var(--veces);
+    animation-fill-mode:forwards;
+    z-index: 10;
+}
+
+.circulo4 {
+    animation-name: "rebote4";
+    animation-duration: 3.1s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: var(--veces);
+    animation-fill-mode:forwards;
+}
+
+.circulo5 {
+    animation-name: "rebote5";
+    animation-duration: 3.2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: var(--veces);
+    animation-fill-mode:forwards;
+    z-index: 20;
+}
+
+.circulo6 {
+    animation-name: "rebote6";
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: var(--veces);
+    animation-fill-mode:forwards;
+}
+
+@keyframes rebote1 {
+    0% {
+        top: 0%;
+        background-color: #ee1;
+        top: 0%;
+        left: 0%;
+        }
+
+    25% {
+        top: 10%;
+        left: 40%;
+        background-color: #a00;
+    }
+
+    55% {
+        top: 40%;
+        left: 60%;
+        min-width: 1em;
+        min-height: 1em;
+        background-color: transparent;
+    }
+
+    100% {
+        top: 80%;
+        left: 80%;
+        min-width: 10em;
+        min-height: 10em;
+        background-color: #90b;
+    }
+}
+
+@keyframes rebote2 {
+    0% {
+        top: 0%;
+        background-color: #90b;
+        top: 0%;
+        left: 0%;
+    }
+    
+    
+    50% {
+        min-width: 5em;
+        min-height: 5em;
+        background-color: #33a;
+    }   
+    
+    
+    100% {
+        top: 80%;
+        left: 60%;
+        min-width: 8em;
+        min-height: 8em;
+        background-color: #ee1;
+    }
+}
+
+@keyframes rebote3 {
+    0% {
+        top: 0%;
+        background-color: #0a0;
+        top: 0%;
+        left: 0%;
+    }
+    
+    
+    60% {
+        min-width: 5em;
+        min-height: 5em;
+        background-color: #33a;
+    }   
+    
+    
+    100% {
+        top: 80%;
+        left: 80%;
+        min-width: 10em;
+        min-height: 10em;
+        background-color: #9e1;
+    }
+}
+
+@keyframes rebote4 {
+    0% {
+        top: 0%;
+        background-color: #ee1;
+        top: 0%;
+        left: 0%;
+    }
+    
+    
+    30% {
+        min-width: 5em;
+        min-height: 5em;
+        background-color: #33a;
+    }   
+    
+    
+    100% {
+        top: 80%;
+        left: 30%;
+        min-width: 9em;
+        min-height: 9em;
+        background-color: #f90;
+    }
+}
+
+@keyframes rebote5 {
+    0% {
+        top: 0%;
+        background-color: #a22;
+        top: 0%;
+        left: 0%;
+    }
+    
+    
+    65% {
+        min-width: 5em;
+        min-height: 5em;
+        background-color: transparent;
+    }
+    
+    
+    100% {
+        top: 80%;
+        left: 40%;
+        min-width: 7em;
+        min-height: 7em;
+        background-color: #2e2;
+    }
+}
+
+@keyframes rebote6 {
+    0% {
+        top: 0%;
+        background-color: #90b;
+        top: 0%;
+        left: 0%;
+    }
+    
+    
+    50% {
+        min-width: 4em;
+        min-height: 4em;
+        background-color: #33a;
+    }   
+    
+    
+    100% {
+        top: 80%;
+        left: 50%;
+        min-width: 8em;
+        min-height: 8em;
+        background-color: #808dba;
+    }
+}
